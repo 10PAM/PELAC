@@ -39,8 +39,12 @@ Vec3 operator*(float scalar, Vec3 vec) {
 }
 
 /**
-  
+Creates a generaic Vector of any size.
 */
 class Vec {
-  
+  public:
+    int vecArr[];
+    Vec(int vecA[]) { 
+      
+  }
 }
