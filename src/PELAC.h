@@ -3,6 +3,9 @@ File: PELAC.h
 About: Main header of PELAC calculator. Contains methods for computing.
 */
 
+// Required includes
+#include <iostream>
+
 // Predefine
 class Vec3;
 
@@ -45,6 +48,6 @@ class Vec {
   public:
     int vecArr[] = toArray();
     Vec(int vecA[]) { 
-        
+        std::cout << sizeof(VecA)/sizeof(VecA[0]) << std::endl;
     }
 }
