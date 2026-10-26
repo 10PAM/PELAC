@@ -41,3 +41,6 @@ Vec3 operator*(float scalar, Vec3 vec) {
 /**
   
 */
+class Vec {
+  
+}
