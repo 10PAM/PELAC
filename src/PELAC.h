@@ -29,6 +29,7 @@ class Vec3 {
       this->y *= scalar;
       this->z *= scalar;
     }
+    int dot() {}
 };
 Vec3 operator*(Vec3 vec, float scalar) {
   return vec *= scalar
@@ -38,5 +39,5 @@ Vec3 operator*(float scalar, Vec3 vec) {
 }
 
 /**
-
+  
 */
