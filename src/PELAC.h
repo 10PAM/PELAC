@@ -43,8 +43,8 @@ Creates a generaic Vector of any size.
 */
 class Vec {
   public:
-    int vecArr[];
+    int vecArr[] = toArray();
     Vec(int vecA[]) { 
-      
-  }
+        
+    }
 }
