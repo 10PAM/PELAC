@@ -51,18 +51,16 @@ class Vec {
 /**
 TODO: ADD A FUNCTION FOR Exponents
 Static: Allows for calculating powers.
+
+Call: Pelac.Exp(1, 3);
 */
 class Exp {
   public:
     int number = 0;
-    static int getExp(int p_number, int p_base) {
+    static int Exp(int p_number, int p_base) {
       this.number = p_number;
       for (int i = 0; i < p_base - 1; ++i) {
         p_number *= p_base;
       }
     };
-
-    int total() {
-      return number;
-    }
 }
