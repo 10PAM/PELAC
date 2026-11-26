@@ -1,7 +1,6 @@
-/*
-File: PELAC.h
-About: Main header of PELAC calculator. Contains methods for computing.
-*/
+// File: PELAC.h
+// About: Main header of PELAC calculator. Contains methods for computing.
+// Lead Programmers: Mario Aguilera Piceno
 
 // Predefine
 class Vec3;
