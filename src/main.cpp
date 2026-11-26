@@ -1,13 +1,16 @@
 /*
-  
+Copyright 2026 - Piceno LLC.
+Lead Programmers {
+  Mario Aguilera Piceno
+}
 */
 
 #include <iostream>
-#include <PELAC>
+#include <PELAC.h>
 
 int main() {
-  Vec3 vector = new Vec3(1, 2, 3);
-  vector *= 1.0f;
+  Vec3 vector(1, 2, 3);
+  vector *= 9.0f;
 
-  std::cout << vector << std::endl;
+  std::cout << "Vec3: " << vector.x << ", " << vector.y << ", " << vector.z << std::endl;
 }
