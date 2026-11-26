@@ -1,9 +1,7 @@
-/*
-Copyright 2026 - Piceno LLC.
-Lead Programmers {
-  Mario Aguilera Piceno
-}
-*/
+// Copyright 2026 - Piceno LLC.
+// Lead Programmers {
+//  Mario Aguilera Piceno
+//}
 
 #include <iostream>
 #include <PELAC.h>
