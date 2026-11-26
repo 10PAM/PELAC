@@ -11,19 +11,28 @@ class PELAC {
   static int add(int other) {}
   static int times(int other) {}
   static void calculate() {}
+
+  // Call: Pelac.Exp(1, 3);
+  static int Exp(int p_number, int p_base) {
+    for (int i = 0; i < p_base - 1; ++i) {
+      p_number *= p_base;
+    }
+    return p_number;
+  }
 };
 
-// vector3: x, y, z.
+// Vector3D
 class Vec3 {
   public:
     int x;
     int y;
     int z;
     Vec3(int x, int y, int z) {
-      this.x = x;
-      this.y = y;
-      this.z = y;
+      this->x = x;
+      this->y = y;
+      this->z = y;
     };
+    ~Vec3() {}
     Vec3& operator*=(float scalar) {
       this->x *= scalar;
       this->y *= scalar;
@@ -31,36 +40,21 @@ class Vec3 {
     }
     int dot() {}
 };
+
+// Scaling Vec3: Vec3*=scaler;
 Vec3 operator*(Vec3 vec, float scalar) {
-  return vec *= scalar
-}
-Vec3 operator*(float scalar, Vec3 vec) {
-  return vec *= scalar
+  return vec *= scalar;
 }
 
-/**
-Creates a generaic Vector of any size.
-*/
+// Scaling Vec3: scalar*=Vec3;
+Vec3 operator*(float scalar, Vec3 vec) {
+  return vec *= scalar;
+}
+
+// Construct a General Vector
 class Vec {
   public:
-    int vecArr[] = toArray();
+    //int vecArr[] = toArray();
     Vec(int vecA[]) { 
     }
-}
-
-/**
-TODO: ADD A FUNCTION FOR Exponents
-Static: Allows for calculating powers.
-
-Call: Pelac.Exp(1, 3);
-*/
-class Exp {
-  public:
-    int number = 0;
-    static int Exp(int p_number, int p_base) {
-      this.number = p_number;
-      for (int i = 0; i < p_base - 1; ++i) {
-        p_number *= p_base;
-      }
-    };
-}
+};
